@@ -61,12 +61,28 @@
 //     }
 // }
 
+// class class3{
+//     public static void main(String [] args){
+//         String str = "helllo java cpp";
+//         String a[] = str.split(" ");
+//         for(String str1:a){
+//             System.out.println(str1);
+//         }
+//     }
+// }
+
 class class3{
     public static void main(String [] args){
-        String str = "helllo java cpp";
-        String a[] = str.split(" ");
-        for(String str1:a){
-            System.out.println(str1);
+        String str = "java";
+        int v=0,c=0;
+        for(char ch : str.toCharArray()){
+            if("aeiou".indexOf(ch)!=-1){
+                v++;
+            }else{
+                c++;
+            }
         }
+        System.out.println("The no. of vowels are: "+v);
+        System.out.println("The no. of consonants are: "+c);
     }
 }
