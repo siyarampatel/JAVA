@@ -11,6 +11,7 @@ class dog extends animal{
     void eat(){
         System.out.println("Eating");
     }
+    
 }
 
 class class_10_4{
