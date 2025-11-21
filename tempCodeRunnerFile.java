@@ -1,2 +1,3 @@
-System.out.println(str);
-        str.delete(1,3);
+public void display(){
+//         System.out.println("Displaying1");
+//     }
