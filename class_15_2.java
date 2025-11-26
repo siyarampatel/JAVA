@@ -10,3 +10,4 @@ class class_15_2{
         System.out.println(map);
     }
 }
+
