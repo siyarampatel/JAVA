@@ -1,3 +1,4 @@
+/*Iterator is used when you want to safely remove elements from a collection while looping. */
 import java.util.*;
 class class_18{
     public static void main(String [] args){
@@ -8,8 +9,9 @@ class class_18{
         list.add(7);
         Iterator<Integer> it = list.iterator();
         while(it.hasNext()){
-            System.out.println(it.next());
-            if(it.next()==0){
+            int x = it.next();
+            System.out.println(x);
+            if(x==0){
                 it.remove();
             }
         }
