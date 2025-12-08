@@ -1,3 +1,4 @@
+//go till half element and print them and then go reverse while printing elements
 import java.util.*;
 class class_18_4{
     public static void main(String [] args){
@@ -7,9 +8,15 @@ class class_18_4{
             list.add(x);
         }
         ListIterator<Integer>it=list.listIterator();
-        while(it.hasNext()!=list.size()/2){
+       int m=list.size()/2;
+        while(it.hasNext()&&it.nextIndex()<=m){
             int x = it.next();
-            System.out.println(x);
+            System.out.print(x);
+        }
+        System.out.println();
+        while(it.hasPrevious()){
+            Integer y = it.previous();
+            System.out.print(y);
         }
     }
 }
