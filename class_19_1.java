@@ -9,10 +9,13 @@ class class_19_1{
         }
         ListIterator<Integer>it=list.listIterator();
        int m=list.size()/2;
-        while(it.hasNext()&&it.nextIndex()>=m){
+        while(it.nextIndex()<m){
+            it.next();
+        }
+        while(it.hasNext()){
             int x = it.next();
-            System.out.print(x);
+            System.out.println(x);
         }
         
     }
-}
+  }
