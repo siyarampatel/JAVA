@@ -10,7 +10,7 @@ class class_22_3{
         list.add(90);   
         List<Integer> result = list.stream().map(n->n+2).toList();  //using map stream to add 
                                                                     //2 in every element there can be other operations aslo
-        System.out.println(result);                                  //output->stream
+        System.out.println(result);                                  //output->stream,if we have to do change in every element,
         
     }
 }

@@ -9,9 +9,9 @@ class class_22_2{
         list.add(70);
         list.add(80);
         list.add(90);   /*we can only use these predefined functions in stream only*/
-        List<Integer> result = list.stream().filter(n->n>60).toList(); //used filter by converting to stream then converted it to list a
+        List<Integer> result = list.stream().filter(n->n>60).toList(); //used filter by converting list to stream then converted it to list a
                                                                        // and printed it
         System.out.println(result);
         
     }
-}
+}//filter takes stream and gives stream in output 
